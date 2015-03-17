@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_action_content_add_box"
+        android:orderInCategory="10"
+        android:title="@string/action_new"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="30"
+        android:title="@string/action_refresh"
+        app:showAsAction="ifRoom" />
+</menu>

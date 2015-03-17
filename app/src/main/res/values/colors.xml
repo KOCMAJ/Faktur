@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="apptheme_color">#60aba4</color>
+
+    <color name="tooltip_color">#dd80cbc4</color>
+    <color name="drawer_color">#dd80cbc4</color>
+    <color name="drawer_text_color">#fff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

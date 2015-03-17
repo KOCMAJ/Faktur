@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin" 
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <EditText
+        android:id="@+id/textOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+
+        android:inputType="text|textNoSuggestions"
+        android:hint="@string/opis_usluge" />
+
+    <CheckBox
+        android:id="@+id/checkObim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="@string/dodaj_obim" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+    
+    <EditText
+        android:id="@+id/textIznos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/iznos"
+        android:inputType="numberDecimal"
+        android:digits="0123456789,-" />
+
+    <CheckBox
+        android:id="@+id/checkEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/u_evrima" />
+    
+    <CheckBox
+        android:id="@+id/checkAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/auto" />
+    
+</LinearLayout>

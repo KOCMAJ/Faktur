@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fakturisanje</string>
+
+    <string-array name="menu_items">
+        <item>Fakture</item>
+        <item>Komitenti</item>
+        <item>Usluge</item>
+        <item>Memorandum</item>
+        <item>Automatsko fakturisanje</item>
+        <item>Pregled PDF-ova</item>
+    </string-array>
+    <string-array name="menu_tags">
+        <item>fakture</item>
+        <item>komitenti</item>
+        <item>usluge</item>
+        <item>memorandum</item>
+        <item>automatsko</item>
+        <item>pdf</item>
+    </string-array>
+    <integer-array name="menu_underlined">
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </integer-array>
+    <string name="drawer_open">Otvori meni</string>
+    <string name="drawer_close">Zatvori meni</string>
+
+    <string name="action_refresh">Osveži</string>
+    <string name="action_edit">Pregledaj</string>
+    <string name="action_new">Dodaj</string>
+    <string name="action_delete">Ukloni</string>
+    <string name="action_save">Snimi</string>
+    <string name="action_pdf">PDF</string>
+    <string name="action_about">O programu</string>
+
+    <string name="implement_callbacks">Activity must implement FragmentsCallbacks.</string>
+
+    <string name="izmene">Izmene</string>
+    <string name="da_snimim">Da li da snimim načinjne izmene?</string>
+    <string name="snimi">Snimi</string>
+    <string name="ne">Ne</string>
+    <string name="rdjav_datum">Neispravno unet datum.</string>
+    <string name="rdjav_iznos">Neispravno unet iznos.</string>
+    <string name="nista_za_brisanje">Nema šta da se briše, osvežite podatke.</string>
+    <string name="greska">"Greška: "</string>
+    <string name="brisi">Briši</string>
+    <string name="pismani">Odustani</string>
+    <string name="n_da_brisem">\nDa li da brišem?</string>
+    <string name="nema_izmena">Nije bilo izmena.</string>
+    <string name="racun_br">"Račun br. "</string>
+    <string name="od">" od "</string>
+
+    <string name="brisanje_komitenta">Brisanje komitenta</string>
+    <string name="uklonjen_komitent">Komitent je uklonjen.</string>
+    <string name="obavezan_naziv">Naziv komitenta mora da postoji.</string>
+    <string name="snimljen_komitent">"Komitent snimljen pod šifrom: "</string>
+    <string name="presnimljen_komitent">Podaci o komitentu su presnimljeni.</string>
+
+    <string name="brisanje_usluge">Brisanje usluge</string>
+    <string name="uklonjena_usluga">Usluga je uklonjena.</string>
+    <string name="obavezan_opis">Opis usluge mora da postoji.</string>
+    <string name="snimljena_usluga">"Usluga snimljena pod šifrom: "</string>
+    <string name="presnimljena_usluga">Podaci o usluzi su presnimljeni.</string>
+
+    <string name="brisanje_fakture">Brisanje fakture</string>
+    <string name="uklonjena_faktura">Faktura je uklonjena.</string>
+    <string name="presnimljena_faktura">Podaci fakture su presnimljeni.</string>
+    <string name="snimljena_faktura">"Faktura snimljena pod šifrom: "</string>
+    <string name="obavezan_broj">Broj računa mora da postoji.</string>
+    <string name="obavezno_mesto">Mesto izdavanja računa mora da postoji.</string>
+
+    <string name="u_evrima">u evrima</string>
+    <string name="cena">Cena:</string>
+    <string name="dodaj_obim">dodaj obim usluge</string>
+    <string name="opis">Opis:</string>
+    <string name="std_usluga">Standardna usluga za komitenta:</string>
+    <string name="pib">PIB:</string>
+    <string name="email">e-mail:</string>
+    <string name="adresa">Adresa:</string>
+    <string name="mesto">Mesto:</string>
+    <string name="naziv">Naziv:</string>
+    <string name="opis_usluge">Opis usluge</string>
+    <string name="iznos">Iznos</string>
+    <string name="auto">auto</string>
+    <string name="mesto_izdavanja">Mesto izdavanja:</string>
+    <string name="datum_izdavanja">Datum izdavanja:</string>
+    <string name="datum_prometa">Datum prometa:</string>
+    <string name="napomena">Napomena:</string>
+    <string name="nacin_placanja">Način plaćanja:</string>
+    <string name="kurs1e">Kurs 1 €:</string>
+    <string name="obim_usluge">Obim usluge:</string>
+    <string name="maticni_broj">Matični broj:</string>
+    <string name="sifra_delatnosti">Šifra delatnosti:</string>
+    <string name="ziro_racun">Žiro račun:</string>
+    <string name="datum">Datum:</string>
+    <string name="promet">Promet:</string>
+    <string name="komitent">Komitent:</string>
+
+    <string name="o_firmi_a">O firmi 1</string>
+    <string name="o_firmi_b">O firmi 2</string>
+    <string name="o_fakturi">O fakturi</string>
+
+    <string name="kome">Kome?</string>
+    <string name="kako">Kako?</string>
+
+    <string name="osvezavam">Osvežavam...</string>
+    <string name="strpljenje">Molim za strpljenje.</string>
+    <string name="ok">OK</string>
+    <string name="brisi_pdfs">Brisanje svih PDF-ova</string>
+    <string name="pdfa_obrisano">"PDF-a obrisano: "</string>
+
+
+</resources>

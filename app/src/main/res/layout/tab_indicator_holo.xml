@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabWrapper"
+    android:layout_width="140dip"
+    android:layout_height="48dp"
+    android:layout_weight="1"
+    android:layout_marginTop="1dip"
+    android:layout_marginBottom="1dip"
+    android:orientation="vertical"
+    android:background="@drawable/apptheme_tab_indicator_holo"
+    >
+
+    <ImageView android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView android:id="@+id/title"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="AVALA"
+
+         />
+
+</RelativeLayout>
+
