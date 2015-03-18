@@ -26,7 +26,7 @@ import java.util.Collections;
 public class PdfPregled extends ListFragment implements Updater {
     private FragmentsCallbacks mCallbacks;
     private PdfAdapter adapter;
-    private final ArrayList<File> fileList = new ArrayList<File>();
+    private final ArrayList<File> fileList = new ArrayList<>();
 
     public PdfPregled() {
     }
@@ -108,8 +108,10 @@ public class PdfPregled extends ListFragment implements Updater {
     public void updateData() {
         fileList.clear();
         //getting SDcard path
-        String path;
-        path = getActivity().getExternalFilesDir("Fakture").getAbsolutePath();
+        String folderName = getActivity().getString(R.string.pdf_folder);
+        File folder = getActivity().getExternalFilesDir(folderName);
+        assert folder != null;
+        String path = folder.getAbsolutePath();
         File dir = new File(path);
         File listFile[] = dir.listFiles();
         if (listFile != null && listFile.length > 0) {
