@@ -5,9 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
@@ -222,7 +220,7 @@ public class FakturaFragmentDetail extends Fragment implements Updater {
 
     private void initKomitent() {
         final List<Komitent> lista = Api.getInstance().getListKomitentSort();
-        ArrayAdapter<Komitent> adapter = new ArrayAdapter<Komitent>(getActivity(), android.R.layout.simple_spinner_item, lista);
+        ArrayAdapter<Komitent> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, lista);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         komitent_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -396,7 +394,7 @@ public class FakturaFragmentDetail extends Fragment implements Updater {
     public void makePdf() {
         FileOutputStream outStream;
         File pdfFile;
-        String filepath = "fakture";
+        String filepath = getString(R.string.pdf_folder);
         String filename = "Faktura "+faktura.getBroj()+".pdf";
         //check if external storage is available so that we can dump our PDF file there
         if (!AppUtl.isExternalStorageAvailable() || AppUtl.isExternalStorageReadOnly()) {
@@ -409,9 +407,7 @@ public class FakturaFragmentDetail extends Fragment implements Updater {
         try {
             outStream = new FileOutputStream(pdfFile);
             FakturaPdf fpdf = new FakturaPdf(faktura, outStream);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
+        } catch (FileNotFoundException | DocumentException e) {
             e.printStackTrace();
         }
 
