@@ -392,16 +392,16 @@ public class FakturaFragmentDetail extends Fragment implements Updater {
     }
 
     public void makePdf() {
-        FileOutputStream outStream;
-        File pdfFile;
-        String filepath = getString(R.string.pdf_folder);
-        String filename = "Faktura "+faktura.getBroj()+".pdf";
         //check if external storage is available so that we can dump our PDF file there
         if (!AppUtl.isExternalStorageAvailable() || AppUtl.isExternalStorageReadOnly()) {
             String message = "External Storage not available or you don't have permission to write";
             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             return;
         }
+        FileOutputStream outStream;
+        File pdfFile;
+        String filepath = getString(R.string.pdf_folder);
+        String filename = "Faktura "+faktura.getBroj()+".pdf";
         //sdcard/Android/data/com.ms.fak/files/fakture/Faktura 114.pdf
         pdfFile = new File(getActivity().getExternalFilesDir(filepath), filename);
         try {
